@@ -4,44 +4,70 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Semantic</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/8287bcb1e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main class="main">
-        <nav class="nav">
-            <a href="#">
-                <h1>Home&nbsp; &nbsp;</h1>
-            </a>
-            <a href="#">
-                <h1>Sobre&nbsp; &nbsp;</h1>
-            </a>
-            <a href="#">
-                <h1>Produtos&nbsp; &nbsp;</h1>
-            </a>
-        </nav>
+        <header>
+
+            <nav class="nav">
+                <hr>
+                <a href="#">
+                    <h1><i class="fa-solid fa-house" style="color: #000000;">
+                        </i>
+                        Home
+                    </h1>
+                </a>
+                <hr>
+                <a href="#">
+                    <h1>
+                        <i class="fa-solid fa-file" style="color: #000000;"></i>
+                        Sobre
+                    </h1>
+                </a>
+                <hr>
+                <a href="#">
+                    <h1><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        Produtos
+                    </h1>
+                </a>
+                <hr>
+                <label>
+                    <input type="text" placeholder="Busca">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    </a>
+                </label>
+
+            </nav>
+        </header>
         <section class="section-header">
-            <img src="https://picsum.photos/id/870/500/250?grayscale&blur=2">
-        </section>
+            <figure>
+                <img src="https://picsum.photos/seed/picsum/0/0">
+            </figure>
+            </section>
         <section class="section-header-text">
-            <img src="https://picsum.photos/id/528/200/300">
-            <div class="text">
+            <figure>
+                <img src="https://picsum.photos/id/528/0/0">
+            </figure>
+            <article class="text">
                 <h1>Lorem</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, modi aut nihil optio
                     exercitationem
                     ipsa consequuntur impedit. Tempora rerum, similique repellendus distinctio dicta hic! Rem blanditiis
                     incidunt id nihil illum!</p>
-            </div>
+            </article>
         </section>
         <hr>
-        <section class="imgs">
-            <img class="img-circle" src="https://picsum.photos/id/70/100/150?grayscale">
-            <img class="img-circle" src="https://picsum.photos/id/80/100/150?grayscale">
-            <img class="img-circle" src="https://picsum.photos/id/87/100/150?grayscale">
-        </section>
+        <figure class="imgs">
+            <img class="img-circle" src="https://picsum.photos/id/70/0/0?grayscale">
+            <img class="img-circle" src="https://picsum.photos/id/80/0/0?grayscale">
+            <img class="img-circle" src="https://picsum.photos/id/87/0/0?grayscale">
+        </figure>
         <hr>
         <article class="article">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque animi qui dicta reiciendis, facilis
@@ -70,18 +96,15 @@
         </article>
         <footer class="footer">
             <p>Siga Nossas Redes Sociais</p>
-            <div class="logos">
-                <figure>
-                    <img class="logo"
-                        src="https://www.gov.br/mre/pt-br/consulado-orlando/orlando-arquivos/orlando-imagens/instagramlogo.jpg/@@images/image.jpeg">
-                    <img class="logo"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png">
-                    <img class="logo"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png">
-                </figure>
-            </div>
+            <figure class="logos">
+                <img class="logo"
+                    src="https://www.gov.br/mre/pt-br/consulado-orlando/orlando-arquivos/orlando-imagens/instagramlogo.jpg/@@images/image.jpeg">
+                <img class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png">
+                <img class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png">
+            </figure>
         </footer>
     </main>
 </body>
-
 </html>
