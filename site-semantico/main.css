@@ -1,7 +1,26 @@
-@media only screen and (min-width: 800px){
+*{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: cyborg punk;
+    src: url(./fonts/Cyborg\ Punk.ttf);
+}
+:root{
+    --loadText: #FBDF08 ;
+    --fonteEspecial: cyborg punk;
+    --corVidro: #00000050;
+    --corTitulo:#a61212;
+    --fonte:"arial";
+    --corTexto:#f0f8ff;
+}
+
+@media only screen and (min-width: 1000px){
     #load{
-        color: #FBDF08;
-        font-family: cyborg punk;
+        display: flex;
+        flex-direction: column;
+        color: var(--loadText);
+        font-family: var(--fonteEspecial);
         text-align: center;
         background-image: url(./imgs/backgroundIntro.jpg);
         background-position: center;
@@ -14,20 +33,20 @@
         transform: translate(-50%, -50%);
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         z-index: 5;
     }
+
 body {
     display: flex;
     flex-direction: column;
-    background-color: #1f1f1f;
     background-image: url(./imgs/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
     background-clip: initial;
+    overflow: initial;
+
 }
 
 header .section-title {
@@ -36,25 +55,18 @@ header .section-title {
     justify-content: center;
     text-align: center;
 }
-@font-face {
-    font-family: cyborg punk;
-    src: url(./fonts/Cyborg\ Punk.ttf);
-}
-header .title {
-    color: #a61212;
-    font-size: 3em;
-    font-family: cyborg punk;
-}
 
-hr {
-    background-color: black;
+header .title {
+    color: var(--corTitulo);
+    font-size: 3em;
+    font-family: var(--fonteEspecial);
 }
 
 .nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #00000050;
+    background-color: var(--corVidro);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     max-width: 100%;
@@ -65,21 +77,18 @@ hr {
 
 .nav h1 {
     padding: 0.8em;
-    font-family: cyborg punk;
-    color: #f0f8ff;
+    font-family: var(--fonteEspecial);
+    color: var(--corTexto);
     font-size: clamp(0.2em, 0.8em + 1vw, 1em);
     transition: 350ms;
 
 }
+
 .nav h1:hover{
-    font-family: cyborg punk;
-    color: #a61212;
+    font-family: var(--fonteEspecial);
+    color: var(--corTitulo);
     font-size: clamp(0.4em, 1em + 1vw, 1.2em);
     transition: 350ms;
-}
-
-a {
-    text-decoration: none;
 }
 
 .section-header {
@@ -108,31 +117,32 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #00000050;
+    background-color: var(--corVidro);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-align-items: center;
+    align-items: center;
 }
 
 .text p {
     text-align: justify;
     padding: 1em;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f0f8ff;
+    font-family:var(--fonte);
+    color: var(--corTexto);
     line-height: 1.5;
     
 }
 
 .text h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:var(--fonte);
     font-size: clamp(1.5em, 2em + 1vw, 2.5em);
-    color: #f0f8ff;
+    color: var(--corTexto);
     text-align: justify;
     padding-left: 1em;
     justify-content: center;
 
 }
+
 .imgs {
     display: flex;
     flex-direction: row;
@@ -146,6 +156,7 @@ align-items: center;
     transition: 350ms;
 
 }
+
 .imgs img:hover {
     max-width: 32%;
     transition: 350ms;
@@ -162,18 +173,19 @@ align-items: center;
     justify-content: center;
     padding: 1em;
     margin: 1em;
-    color: #f0f8ff;
-    background-color: #00000050;
+    color: var(--corTexto);
+    background-color: var(--corVidro);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     border-radius: 1em;
 }
+
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 1em;
-    background-color: #00000050;
+    background-color: var(--corVidro);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
 }
@@ -183,22 +195,26 @@ align-items: center;
     transition: 350ms;
     
 }
+
 .logo:hover {
     width: 35px;
     transition: 350ms;
 }
+
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte);
     font-size: clamp(0.8em, 1em + 1vw, 1.5em);
-    color: #f0f8ff;
+    color: var(--corTexto);
     line-height: 1.5;
 }
+
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
+   
     #load{
-        color: #FBDF08;
-        font-family: cyborg punk;
+        color: var(--loadText);
+        font-family: var(--fonteEspecial);
         text-align: center;
         background-image: url(./imgs/backgroundIntro.jpg);
         background-position: center;
@@ -217,10 +233,10 @@ p {
         z-index: 5;
 
     }
+
     body {
         display: flex;
         flex-direction: column;
-        background-color: #1f1f1f;
         background-image: url(./imgs/background.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -234,14 +250,11 @@ p {
         justify-content: center;
         text-align: center;
     }
-    @font-face {
-        font-family: cyborg punk;
-        src: url(./fonts/Cyborg\ Punk.ttf);
-    }
+
     header .title {
         color: #a61212;
         font-size: 3em;
-        font-family: cyborg punk;
+        font-family: var(--fonteEspecial);
     }
     
     hr {
@@ -252,7 +265,7 @@ p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: #00000050;
+        background-color: var(--corVidro);
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
         max-width: 100%;
@@ -263,15 +276,11 @@ p {
     
     .nav h1 {
         padding: 0.8em;
-        font-family: cyborg punk;
-        color: #f0f8ff;
+        font-family: var(--fonteEspecial);
+        color: var(--corTexto);
         font-size: clamp(0.2em, 0.8em + 1vw, 1em);
         transition: 350ms;
     
-    }
-    
-    a {
-        text-decoration: none;
     }
     
     .section-header {
@@ -300,7 +309,7 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: #00000050;
+        background-color: var(--corVidro);
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
         align-items: center;
@@ -310,15 +319,15 @@ p {
         text-align: justify;
         padding: 1em;
         justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #f0f8ff;
+        font-family: var(--fonte);
+        color: var(--corTexto);
         line-height: 1.5;
     }
     
     .text h1{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:var(--fonte);
         font-size: clamp(1.5em, 2em + 1vw, 2.5em);
-        color: #f0f8ff;
+        color: var(--corTexto);
         text-align: justify;
         align-items: center;
         padding: 0.5em;
@@ -347,8 +356,8 @@ p {
         justify-content: center;
         padding: 1em;
         margin: 1em;
-        color: #f0f8ff;
-        background-color: #00000050;
+        color: var(--corTexto);
+        background-color: var(--corVidro);
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
         border-radius: 1em;
@@ -359,7 +368,7 @@ p {
         flex-direction: column;
         align-items: center;
         border-radius: 1em;
-        background-color: #00000050;
+        background-color: var(--corVidro);
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
     }
@@ -369,9 +378,9 @@ p {
     }
 
     p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:var(--fonte);
         font-size: clamp(0.8em, 1em + 1vw, 1.5em);
-        color: #f0f8ff;
+        color: var(--corTexto);
         line-height: 1.5;
     }
 }
