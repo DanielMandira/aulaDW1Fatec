@@ -4,7 +4,8 @@
     width: 1020px;
     height: 730px;
 }
-.arvore{
+
+.arvore {
     background: url("./imgs/arvore.png");
     position: absolute;
     width: 1020px;
@@ -13,7 +14,8 @@
     top: -50px;
     z-index: 2;
 }
-.combat{
+
+.combat {
     background: url("./imgs/combat_dummy.gif");
     width: 65px;
     height: 65px;
@@ -23,6 +25,14 @@
     z-index: 2;
 
 }
+
+.move-person {
+    position: absolute;
+    animation: move-person 20s infinite;
+    top: 450px;
+    left: 110px;
+}
+
 .enemy1 {
     background: url("./imgs/armored_skeleton_slash.gif") 0px -193px;
     width: 63px;
@@ -35,152 +45,173 @@
 }
 
 .person {
-    background: url("./imgs/player.png")0px 0px;
+    background: url("./imgs/player.png")0px -133px;
     width: 40px;
     height: 70px;
-    animation: anima-person 8.5s steps(3) infinite;
-    position: absolute;
-    top: 450px;
-    left: 110px;
+    position: relative;
     z-index: 0;
+    animation: anima-person 20s steps(3) infinite;
 }
 
-@keyframes anima-person {
-    
+@keyframes move-person {
     0% {
-        background-position-y: -135px;
-        background-position-x: min(-144px) max(0px);
         top: 450px;
         left: 110px;
     }
-    2.5% {
-        background-position-x: -144px;
-        background-position-y:-135px;
-        top: 490px;
+
+    10% {
+        top: 510px;
+        left: 110px;
+    }
+    10.001% {
+        top: 510px;
+        left: 110px;
+    }
+    20% {
+        top: 510px;
+        left: 350px;
+    }
+    20.001% {
+        top: 510px;
+        left: 350px;
+    }
+    30% {
+        top: 210px;
+        left: 350px;
+    }
+    30.001% {
+        top: 210px;
+        left: 350px;
+    }
+    40% {
+        top: 210px;
+        left: 175px;
+    }
+    40.001% {
+        top: 210px;
+        left: 175px;
+    }
+    50% {
+        top: 210px;
+        left: 775px;
+    }
+    50.001% {
+        top: 210px;
+        left: 775px;
+    }
+    60% {
+        top: 480px;
+        left: 775px;
+    }
+    60.001% {
+        top: 480px;
+        left: 775px;
+    }
+    65% {
+        top: 210px;
+        left: 775px;
+    }
+    65.001% {
+        top: 210px;
+        left: 775px;
+    }
+    70% {
+        top: 210px;
+        left: 350px;
+    }
+    70.001% {
+        top: 210px;
+        left: 350px;
+    }
+    80% {
+        top: 510px;
+        left: 350px;
+    }
+    80.001% {
+        top: 510px;
+        left: 350px;
+    }
+    90% {
+        top: 510px;
+        left: 110px;
+    }
+    90.001% {
+        top: 510px;
+        left: 110px;
+    }
+    100% {
+        top: 450px;
         left: 110px;
     }
 
-    5% {
-        background-position-x: -144px;
-        background-position-y:-135px;
-        top: 520px;
-        left: 110px;
-    }
+}
 
-    5.1% {
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 520px;
-        left: 110px;
-    }
-    7.5% {
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 520px;
-        left: 210px;
+@keyframes anima-person {
+    0% {
+        background-position: 0px -133px;
     }
 
     10% {
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 520px;
-        left: 350px;
+        background-position: -144px -133px;
     }
-
-    10.1% {
-        background-position-x: -144px;
-        background-position-y:0px;
-        top: 520px;
-        left: 350px;
-    }
-    
-    12.5% {
-        background-position-x: -144px;
-        background-position-y:0px;
-        top: 420px;
-        left: 350px;
-    }
-
-    15% {
-        background-position-x: -144px;
-        background-position-y:0px;
-        top: 320px;
-        left: 350px;
-    }
-    17.5% {
-        background-position-x: -144px;
-        background-position-y:0px;
-        top: 220px;
-        left: 350px;
-    }
-    17.51% {
-        background-position-x: -144px;
-        background-position-y:-193px;
-        top: 220px;
-        left: 350px;
+    10.001% {
+        background-position: -0px -67px;
     }
     20% {
-        background-position-x: -144px;
-        background-position-y:-193px;
-        top: 220px;
-        left: 250px;
+        background-position: -144px -67px;
     }
-    22.5% {
-        background-position-x: -144px;
-        background-position-y:-193px;
-        top: 220px;
-        left: 150px;
+    20.001% {
+        background-position: -0px -0px;
     }
-    22.51% {
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 220px;
-        left: 150px;
+    30% {
+        background-position: -144px -0px;
     }
-    25% {
-        background-position-x: -144px;
-        background-position-y: -70px;
-        top: 220px;
-        left: 250px;
+    30.001% {
+        background-position: -0px -199px;
     }
-    27.5% {
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 220px;
-        left: 350px;
+    40% {
+        background-position: -144px -199px;
     }
-
-    30%{
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 220px;
-        left: 450px;
+    40.001% {
+        background-position: -0px -67px;
     }
-    32.5%{
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 220px;
-        left: 550px;
+    50% {
+        background-position: -144px -67px;
     }
-    35%{
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 220px;
-        left: 650px;
+    50.001% {
+        background-position: -0px -133px;
     }
-    37.5%{
-        background-position-x: -144px;
-        background-position-y:-70px;
-        top: 220px;
-        left: 755px;
+    60% {
+        background-position: -144px -133px;
     }
-    37.51%{
-        background-position-x: -144px;
-        background-position-y:-135px;
-        top: 220px;
-        left: 755px;
+    60.001% {
+        background-position: -0px -0px;
     }
-
-
-
+    65% {
+        background-position: -144px -0px;
+    }
+    65.001% {
+        background-position: -0px -199px;
+    }
+    70% {
+        background-position: -144px -199px;
+    }
+    70.001% {
+        background-position: -0px -133px;
+    }
+    80% {
+        background-position: -144px -133px;
+    }
+    80.001% {
+        background-position: -0px -199px;
+    }
+   90% {
+        background-position: -144px -199px;
+    }
+    90.001% {
+        background-position: -0px -0px;
+    }
+    100%{
+        background-position: -144px -0px;
+    }
 }
