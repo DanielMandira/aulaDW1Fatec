@@ -59,86 +59,106 @@
         left: 110px;
     }
 
+    5% {
+        top: 510px;
+        left: 110px;
+    }
+
+    5.001% {
+        top: 510px;
+        left: 110px;
+    }
+
     10% {
         top: 510px;
-        left: 110px;
+        left: 350px;
     }
+
     10.001% {
         top: 510px;
-        left: 110px;
+        left: 350px;
     }
+
     20% {
-        top: 510px;
+        top: 210px;
         left: 350px;
     }
+
     20.001% {
-        top: 510px;
-        left: 350px;
-    }
-    30% {
         top: 210px;
         left: 350px;
     }
-    30.001% {
+
+    25% {
         top: 210px;
-        left: 350px;
+        left: 175px;
     }
+
+    25.001% {
+        top: 210px;
+        left: 175px;
+    }
+
     40% {
         top: 210px;
-        left: 175px;
+        left: 775px;
     }
+
     40.001% {
         top: 210px;
-        left: 175px;
+        left: 775px;
     }
+
     50% {
-        top: 210px;
+        top: 480px;
         left: 775px;
     }
+
     50.001% {
-        top: 210px;
+        top: 480px;
         left: 775px;
     }
+
     60% {
-        top: 480px;
+        top: 210px;
         left: 775px;
     }
+
     60.001% {
-        top: 480px;
-        left: 775px;
-    }
-    65% {
         top: 210px;
         left: 775px;
     }
-    65.001% {
-        top: 210px;
-        left: 775px;
-    }
+
     70% {
         top: 210px;
         left: 350px;
     }
+
     70.001% {
         top: 210px;
         left: 350px;
     }
+
     80% {
         top: 510px;
         left: 350px;
     }
+
     80.001% {
         top: 510px;
         left: 350px;
     }
+
     90% {
         top: 510px;
         left: 110px;
     }
+
     90.001% {
         top: 510px;
         left: 110px;
     }
+
     100% {
         top: 450px;
         left: 110px;
@@ -151,67 +171,169 @@
         background-position: 0px -133px;
     }
 
-    10% {
+    2.5% {
         background-position: -144px -133px;
     }
-    10.001% {
-        background-position: -0px -67px;
-    }
-    20% {
-        background-position: -144px -67px;
-    }
-    20.001% {
-        background-position: -0px -0px;
-    }
-    30% {
-        background-position: -144px -0px;
-    }
-    30.001% {
-        background-position: -0px -199px;
-    }
-    40% {
-        background-position: -144px -199px;
-    }
-    40.001% {
-        background-position: -0px -67px;
-    }
-    50% {
-        background-position: -144px -67px;
-    }
-    50.001% {
+    5% {
         background-position: -0px -133px;
     }
-    60% {
-        background-position: -144px -133px;
+
+    5.001% {
+        background-position: -144px -67px;
     }
-    60.001% {
+    7.5% {
+        background-position: -0px -67px;
+    }
+    10% {
+        background-position: -144px -67px;
+    }
+    10.001% {
         background-position: -0px -0px;
     }
-    65% {
+    12.5% {
         background-position: -144px -0px;
     }
-    65.001% {
+    15% {
+        background-position: -0px -0px;
+    }
+    17.5% {
+        background-position: -144px -0px;
+    }
+    20% {
+        background-position: -0px -0px;
+    }
+
+    20.001% {
+        background-position: -144px -199px;
+    }
+    22.5% {
         background-position: -0px -199px;
     }
+
+    25% {
+        background-position: -144px -199px;
+    }
+
+    25.001% {
+        background-position: -0px -67px;
+    }
+    27.5% {
+        background-position: -144px -67px;
+    }
+    30% {
+        background-position: -0px -67px;
+    }
+    32.5% {
+        background-position: -144px -67px;
+    }
+    35% {
+        background-position: -0px -67px;
+    }
+    37.5% {
+        background-position: -144px -67px;
+    }
+    40% {
+        background-position: -0px -67px;
+    }
+
+    40.001% {
+        background-position: -0px -133px;
+    }
+    42.5% {
+        background-position: -144px -133px;
+    }
+    45% {
+        background-position: -0px -133px;
+    }
+    47.5% {
+        background-position: -144px -133px;
+    }
+    50% {
+        background-position: -144px -133px;
+    }
+
+    50.001% {
+        background-position: -0px -0px;
+    }
+    52.5% {
+        background-position: -144px -0px;
+    }
+    55% {
+        background-position: -0px -0px;
+    }
+    57.5% {
+        background-position: -144px -0px;
+    }
+
+    60% {
+        background-position: -0px -0px;
+    }
+
+    60.001% {
+        background-position: -144px -199px;
+    }
+    62.5% {
+        background-position: -0px -199px;
+    }
+    65% {
+        background-position: -144px -199px;
+    }
+    67.5% {
+        background-position: -0px -199px;
+    }
+
     70% {
         background-position: -144px -199px;
     }
+
     70.001% {
         background-position: -0px -133px;
     }
-    80% {
+    72.5% {
         background-position: -144px -133px;
     }
-    80.001% {
-        background-position: -0px -199px;
+    75% {
+        background-position: -0px -133px;
     }
-   90% {
+    77.5% {
+        background-position: -144px -133px;
+    }
+
+    80% {
+        background-position: -0px -133px;
+    }
+
+    80.001% {
         background-position: -144px -199px;
     }
+    82.5% {
+        background-position: -0px -199px;
+    }
+    85% {
+        background-position: -144px -199px;
+    }
+    87.5% {
+        background-position: -0px -199px;
+    }
+
+    90% {
+        background-position: -144px -199px;
+    }
+
     90.001% {
         background-position: -0px -0px;
     }
-    100%{
+    92.5% {
+        background-position: -144px -0px;
+    }
+    95% {
+        background-position: -0px -0px;
+    }
+    97.5% {
+        background-position: -144px -0px;
+    }
+
+    100% {
         background-position: -144px -0px;
     }
 }
