@@ -28,7 +28,7 @@
 
 .move-person {
     position: absolute;
-    animation: move-person 20s infinite;
+    animation: move-person 20s linear infinite;
     top: 450px;
     left: 110px;
 }
