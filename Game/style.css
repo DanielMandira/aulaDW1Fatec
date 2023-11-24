@@ -39,6 +39,21 @@ body{
     top: 450px;
     left: 110px;
 }
+.move-dragon{
+    position: absolute;
+    top: 20px;
+    left: 1000px;
+    visibility:visible;
+    animation: move-dragon 20s linear infinite;
+}
+.dragon{
+    background: url("./imgs/flying_dragon-red-RGB.png")-0px -480px no-repeat;
+    height:132px;
+    width:191px;
+    position: relative;
+    z-index: 2;
+    animation: anima-dragon 0.5s steps(3) infinite;
+}
 
 .enemy1 {
     background: url("./imgs/armored_skeleton_slash.gif") 0px -193px;
@@ -59,7 +74,25 @@ body{
     z-index: 0;
     animation: anima-person 20s steps(3) infinite;
 }
+@keyframes move-dragon{
+    0%{
+    top: 20px;
+    left: 1000px;
+    }
 
+    100%{
+        top: 20px;
+        left: -100px;
+    }
+}
+@keyframes anima-dragon {
+    0%{
+        background-position: -0px -480px;
+    }
+   100%{
+        background-position: -573px -480px ;
+    }
+}
 @keyframes move-person {
     0% {
         top: 450px;
