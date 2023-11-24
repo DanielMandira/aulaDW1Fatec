@@ -28,7 +28,7 @@ body{
     height: 65px;
     position: absolute;
     top: 310px;
-    left: 755px;
+    left: 750px;
     z-index: 2;
 
 }
@@ -60,7 +60,7 @@ body{
     width: 63px;
     height: 63px;
     position: absolute;
-    top: 210px;
+    top: 200px;
     left: 250px;
     z-index: 2;
 
@@ -95,107 +95,107 @@ body{
 }
 @keyframes move-person {
     0% {
-        top: 450px;
-        left: 110px;
+        top: 448px;
+        left: 108px;
     }
 
     5% {
-        top: 510px;
+        top: 505px;
         left: 110px;
     }
 
     5.001% {
-        top: 510px;
+        top: 495px;
         left: 110px;
     }
 
     10% {
-        top: 510px;
-        left: 350px;
+        top: 495px;
+        left: 340px;
     }
 
     10.001% {
-        top: 510px;
-        left: 350px;
+        top: 495px;
+        left: 340px;
     }
 
     20% {
-        top: 210px;
-        left: 350px;
+        top: 200px;
+        left: 340px;
     }
 
     20.001% {
-        top: 210px;
-        left: 350px;
+        top: 200px;
+        left: 340px;
     }
 
     25% {
-        top: 210px;
+        top: 200px;
         left: 175px;
     }
 
     25.001% {
-        top: 210px;
+        top: 200px;
         left: 175px;
     }
 
     40% {
         top: 210px;
-        left: 775px;
+        left:750px;
     }
 
     40.001% {
         top: 210px;
-        left: 775px;
+        left:750px;
     }
 
     50% {
         top: 480px;
-        left: 775px;
+        left:750px;
     }
 
     50.001% {
         top: 480px;
-        left: 775px;
+        left:750px;
     }
 
     60% {
         top: 210px;
-        left: 775px;
+        left:750px;
     }
 
     60.001% {
         top: 210px;
-        left: 775px;
+        left:750px;
     }
 
     70% {
         top: 210px;
-        left: 350px;
+        left: 340px;
     }
 
     70.001% {
         top: 210px;
-        left: 350px;
+        left: 340px;
     }
 
     80% {
-        top: 510px;
-        left: 350px;
+        top: 495px;
+        left: 340px;
     }
 
     80.001% {
-        top: 510px;
-        left: 350px;
+        top: 495px;
+        left: 340px;
     }
 
     90% {
-        top: 510px;
+        top: 495px;
         left: 110px;
     }
 
     90.001% {
-        top: 510px;
+        top: 495px;
         left: 110px;
     }
 
